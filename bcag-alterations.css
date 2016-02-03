@@ -1,0 +1,1049 @@
+/******************************************
+* contains all major adjustments to base- *
+* level html elements as well as classes  *
+* used throughout.                        *
+******************************************/
+body {
+  font-size: 14px;
+}
+a {
+  color: #4d7996;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  color: #1a4463;
+  cursor: pointer;
+  text-decoration: underline;
+}
+dd {
+  font-weight: 400;
+  margin-left: 1.25em;
+}
+h1 small {
+  display: block;
+  margin-bottom: 0;
+  margin-left: .75em;
+  margin-top: .5em;
+}
+#content {
+  color: #111;
+  font-size: 1em;
+  line-height: 1.35em;
+  min-height: 40em;
+  padding-bottom: 3em;
+}
+/*********** CLASSES ***********/
+.headline {
+  border-bottom: 1px solid #efefef;
+  width: 100%;
+}
+h1.headline {
+  padding: .5em 0;
+}
+.muhlred {
+  background-color: #cc092f;
+}
+.muhlgrey-lite, .muhlgray-lite {
+  background-color: #e5e5e5;
+}
+
+.muhlgrey,
+.muhlgray {
+  background-color: #919693;
+}
+.muhltan {
+  background-color: #ded5b3;
+}
+.muhlblue-lite {
+  background-color: #1a4663;
+}
+.muhlblue {
+  background-color: #003050;
+}
+.white {
+  background-color: #ffffff;
+}
+.muhlred,
+.muhlgrey,
+.muhlgray,
+.muhlblue-lite,
+.muhlblue {
+  color: #ffffff;
+}
+.text-muhlred {
+  color: #cc092f;
+}
+.text-muhlgrey,
+.text-muhlgray {
+  color: #919693;
+}
+.text-muhltan {
+  color: #ded5b3;
+}
+.text-muhlblue-lite {
+  color: #1a4663;
+}
+.text-muhlblue {
+  color: #003050;
+}
+.text-white {
+  color: #ffffff;
+}
+.margintop {
+  margin-top: 1%;
+}
+.marginbottom {
+  margin-bottom: 1%;
+}
+.marginleft {
+  margin-left: 1%;
+}
+.marginright {
+  margin-right: 1%;
+}
+.paddingtop {
+  padding-top: 1%;
+}
+.paddingbottom {
+  padding-bottom: 1%;
+}
+.paddingleft {
+  padding-left: 1%;
+}
+.paddingright {
+  padding-right: 1%;
+}
+.page-header {
+  margin-bottom: 0;
+}
+/**** OVERWRITING BOOTSTRAP ****/
+.btn-link {
+  color: #000;
+}
+.btn-link:hover {
+  color: #666;
+  text-decoration: none;
+}
+.nav-tabs,
+.nav-pills {
+  margin-bottom: 0;
+}
+/*** example (for dd elements) ***/
+.example {
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: inset 0 0 1px 1px #aaa;
+  margin: .5em auto;
+  padding: .5em;
+  width: 90%;
+}
+/*** classes for hr elements ***/
+.dotted {
+  border-style: dotted;
+}
+.large {
+  border-width: 0;
+  border-top-width: .5em;
+}
+/*** classes for tables ***/
+.notop tr:first-child td {
+  border-top: 0;
+}
+.nolines td {
+  border: 0;
+  padding: 1%;
+}
+/*** highlight (for td elements) ***/
+.highlight {
+  background-color: white;
+  color: #1a4663;
+}
+/*** larger (don't remember this?) ***/
+.larger p {
+  font-size: 15px;
+}
+/*** policies stylin' ***/
+.policy ul {
+  margin-left: 2.5em;
+}
+.policy > dl > dt {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  font-size: 1.50em;
+  font-weight: 400;
+  margin-bottom: .25em;
+  width: 100%;
+}
+.policy dd {
+  margin-bottom: 1.5em;
+}
+.policy dl.unstyled > dt {
+  border-bottom: 0;
+  font-size: 100%;
+}
+/*** sidebar (for books/articles/cd-dvd/ask-a-lib/etc. pages) ***/
+.sidebar {
+  border: 1px solid #bbb;
+  padding: .5em;
+}
+.sidebar h3 {
+  border-bottom: 1px solid #888;
+  color: #888;
+}
+.sidebar-options,
+.sidebar- {
+  width: 100%;
+}
+.sidebar-options dt:not(first-of-type) {
+  margin-top: .25em;
+}
+.sidebar-options dd {
+  margin-left: 0;
+}
+/*** spaced (for dl elements) ***/
+.spaced > dt + dd {
+  margin-bottom: .5em;
+}
+.circleM-small,
+.encompass-logo,
+.encompass-logo-full {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-top: 0px;
+  vertical-align: middle;
+  content: "";
+}
+.circleM-small {
+  background-image: url('images/circleM.png');
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  vertical-align: text-top;
+}
+.encompass-logo {
+  background-image: url('images/encompass_icon_med.png');
+  width: 23px;
+  height: 23px;
+}
+.encompass-logo-full {
+  background-image: url("/library/media/style,assets/library/stylesheets/encompass-logo.png");
+  width: 125px;
+  height: 30px;
+}
+/*** adjustments to bootstrap/font-awesome icon behavior ***/
+i[rel="tooltip"] {
+  color: #cc092f;
+}
+i[rel="tooltip"]:hover {
+  color: #88050b;
+  cursor: pointer;
+}
+#navbar {
+  background-color: #cc092f;
+  font-family: "Open Sans", sans-serif;
+  overflow-y: hidden;
+}
+@media only screen and (max-width: 990px) {
+  #navbar ul {
+    display: none;
+  }
+
+  .selectnav { display: block; }
+}
+#navbar > ul > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav .divider {
+  border-bottom: 1px solid #999;
+  margin: .5em auto;
+}
+#nav > li {
+  display: inline-block;
+  font-size: 1.2em;
+  list-style-type: none;
+}
+#nav > li > a {
+  display: inline-block;
+  min-width: 6em;
+  text-align: center;
+}
+#nav > li > a:hover {
+  text-decoration: none;
+}
+#nav > li .dropdown-single,
+#nav > li .dropdown-double {
+  background-color: #fff;
+  box-shadow: 0 1px 2px 1px #aaa;
+  display: none;
+  left: auto;
+  margin-left: -5%;
+  margin-top: .5em;
+  min-width: 10em;
+  padding: 1em;
+  position: absolute;
+  right: auto;
+  width: auto;
+  z-index: 999;
+}
+#nav > li .dropdown-single .dropdown-single .dropdown-column,
+#nav > li .dropdown-double .dropdown-single .dropdown-column {
+  text-align: center;
+}
+#nav > li .dropdown-single .dropdown-column,
+#nav > li .dropdown-double .dropdown-column {
+  display: inline-block;
+  float: left;
+  font-size: .75em;
+  line-height: 1.2em;
+  min-width: 10em;
+  position: relative;
+}
+#nav > li .dropdown-single .dropdown-column a,
+#nav > li .dropdown-double .dropdown-column a {
+  width: 100%;
+}
+#nav > li .dropdown-single .dropdown-column h6,
+#nav > li .dropdown-double .dropdown-column h6 {
+  color: #888;
+  font-weight: 700;
+  margin-bottom: .25em;
+  text-transform: uppercase;
+}
+#nav > li .dropdown-single .dropdown-column h6:first-of-type,
+#nav > li .dropdown-double .dropdown-column h6:first-of-type {
+  margin-top: 0;
+}
+#nav > li:hover {
+  background-color: #1a4663;
+}
+#nav > li:hover .dropdown-single,
+#nav > li:hover .dropdown-double {
+  display: block;
+}
+#nav > li:last-of-type .dropdown-single {
+  right: .25em;
+}
+.dropdown-column:not(:first-of-type) {
+  margin-left: 1em;
+}
+.dropdown-column ul {
+  margin: 0;
+}
+.dropdown-column li {
+  line-height: 1.75em;
+  list-style-type: none;
+}
+div[class^="dropdown"] a {
+  font-weight: 400;
+}
+#nav .dropdown-double.about {
+  min-width: 23em;
+  right: 1em;
+}
+/* (keeps toption elements neat) */
+#top > a.btn {
+  display: bock;
+  min-height: 50px;
+}
+#top a {
+  font-weight: 400;
+}
+#hours div,
+#ask div {
+  padding: 1%;
+}
+/** College Overhead **/
+#college-overhead ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+#college-overhead ul li {
+  display: inline;
+}
+#college-overhead ul li a {
+  color: #333;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 4px;
+  padding: 2px;
+}
+#college-overhead ul li a:hover {
+  color: #003050;
+  text-decoration: none;
+}
+footer {
+  background: #1a4663;
+  color: #919693;
+  font-size: .9em;
+  padding-top: 0;
+  width: auto;
+}
+footer a,
+footer a:hover {
+  color: #dddddd;
+}
+#tweets dt:before {
+  content: "\F099";
+  font-family: "FontAwesome";
+  margin-right: .25em;
+}
+#tweets dt:after {
+  content: " says:";
+  font-weight: 400;
+}
+#tweets dd:nth-of-type(even) {
+  margin-bottom: 1em;
+  text-align: right;
+}
+#tweets dd:nth-of-type(even) a {
+  color: #888;
+}
+#tweets dt + dd {
+  line-height: 1.25em;
+  padding-left: 1.15em;
+}
+/*** uls for college footer ***/
+.library-footer-menu-L,
+.library-footer-menu-R {
+  display: inline-block;
+  float: left;
+  min-width: 40%;
+}
+.library-footer-menu-L li,
+.library-footer-menu-R li {
+  list-style-type: none;
+}
+.library-footer-menu-L {
+  padding-right: 6%;
+}
+/*** very bottom footer (black bar w/attributes) ***/
+.foot-bottom {
+  padding-top: .75%;
+  padding-bottom: .75%;
+}
+.footer-headline h4 {
+  border-bottom: 1px solid #aaa;
+  display: inline-block;
+  margin-bottom: 0;
+  width: 100%;
+}
+@media only screen and (min-width: 805px) and (max-width: 1024px) {
+  ul.library-footer-menu-R {
+    border-top: 1px solid #114161;
+  }
+}
+/**** All Accounts page ****/
+#accounts .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+/* keep accounts thumbnails even */
+
+.thumbnails .thumbnail {
+  min-height: 400px;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail .btn {
+  position: absolute;
+  bottom: 0;
+}
+/***Books, Articles, CDs/DVDs pages ***/
+.individual-extras div.popover {
+  min-width: 35em;
+}
+.searchtips {
+  margin-left: 2%;
+}
+/*horizontal placement of radio buttons*/
+#searchbox input::-webkit-input-placeholder,
+#individual-search input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: 300;
+}
+#searchbox input:-moz-placeholder,
+#individual-search input:-moz-placeholder {
+  color: #999;
+  font-weight: 300;
+}
+#searchbox input::-moz-placeholder,
+#individual-search input::-moz-placeholder {
+  color: #999;
+  font-weight: 300;
+}
+#searchbox input:-ms-input-placeholder,
+#individual-search input:-ms-input-placeholder {
+  color: #999;
+  font-weight: 300;
+}
+#individual-search select,
+#individual-search input[type="submit"] {
+  vertical-align: top;
+}
+span.input-block {
+  display: inline-block;
+  margin-top: 0;
+}
+span.input-block input[type="text"] {
+  margin-bottom: 5px;
+}
+span.input-block input[type="radio"],
+span.input-block label {
+  display: inline-block;
+  vertical-align: top;
+}
+span.input-block label {
+  margin-right: 10px;
+}
+@media only screen and (max-width: 767px) {
+  span.input-block {
+    display: block;
+    margin-bottom: 15px;
+  }
+  span.input-block input[type="text"] {
+    margin-top: 5px;
+  }
+  #individual-search .btn {
+    width: 100%;
+  }
+}
+/**** Databases A-Z ****/
+#dbaz {
+  border: 1px solid #c5c8c6;
+  margin-top: 1%;
+  width: 100%;
+}
+#dbaz caption {
+  font-size: 1.5em;
+  margin-bottom: 1em
+}
+#dbaz caption strong {
+  color: #cc092f;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#dbaz td {
+  padding: 1%;
+}
+#dbaz thead {
+  background-color: #efefef;
+}
+#dbaz tbody tr:nth-of-type(odd) {
+  background-color: #dee;
+}
+.dbaz-top ul {
+  list-style-type: none;
+  margin: 0;
+  position: relative;
+  width: auto;
+}
+.dbaz-top .letter-sort,
+.dbaz-top .letter-sort li {
+  display: inline-block;
+}
+.dbaz-top .dropdown .btn {
+  vertical-align: text-top;
+}
+.dbaz-top .subject-menu {
+  height: 20em;
+  overflow-y: scroll;
+}
+/**** Directions page ****/
+#googlemaps {
+  height: 0;
+  overflow: hidden;
+  padding: 0px;
+  padding-bottom: 50%;
+  position: relative;
+}
+/**** Forms Page ****/
+/* (revisit this, looks not-so-great) */
+#forms {
+  font-size: 12px;
+  border: 3px solid #666;
+  margin-top: 1%;
+  padding: 1%;
+}
+#forms .headline,
+#forms .headline h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.formsbox a {
+  border-bottom: 1px solid #222;
+  color: #000;
+  display: block;
+  padding: 0% 0% 0% .5%;
+  text-decoration: none;
+  background-color: #fff;
+}
+.formsbox a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+#askfront {
+  margin-top: 4%;
+  position: relative;
+}
+/**** Front Page (index) ****/
+#content-index {
+  background-color: #003050;
+  padding: 1.5% 1%;
+}
+#content > div,
+#content-index > div {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+#content > .row-fluid {
+  background-color: #fff;
+}
+#content ul {
+  margin-left: 4em;
+}
+/*blog entry*/
+.entry {
+  float: left;
+  margin-bottom: 10px;
+}
+.entry span.meta {
+  display: block;
+  float: left;
+  padding: 0;
+  text-align: center;
+  /*  width: 50px;  */
+
+  width: 15%;
+}
+.entry span.meta strong {
+  background: #f6f6f6;
+  border: 1px solid #ececec;
+  color: #555;
+  display: block;
+  float: left;
+  font-size: 18px;
+  padding: 5px 0;
+  width: 100%;
+}
+.entry span.meta small {
+  background: #444;
+  border: 1px solid #333;
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 11px;
+  padding: 0;
+  width: 100%;
+}
+.entry div {
+  float: right;
+  width: 79%;
+}
+.entry div h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 0px !important;
+}
+.entry div h4 a {
+  color: #181818;
+}
+.entry div h4 a:hover {
+  color: gray;
+}
+/** are these four necessary? **/
+.wp-caption-text {
+  padding-top: 1.2em;
+  color: #343434;
+  line-height: 1em;
+  text-align: center;
+}
+.wp-caption-text a {
+  font-weight: 600;
+  color: #1a4663;
+}
+.wp-caption-text a:hover {
+  color: #1a4663;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.wp-caption-text a:visited {
+  color: #1a4663;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #news .entry:nth-of-type(4) {
+    display: none;
+  }
+}
+/* overwriting akmalz styling */
+#wrapper {
+  background: #e5e5e5;
+  margin-bottom: 0;
+  padding: .50% 0 .50% 0;
+}
+/* slide container background-image is randomly generated via php on load */
+#slide {
+  background: #003050;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  min-height: 26.5em;
+  position: relative;
+}
+.flexslider img {
+  height: 318px;
+  /*  opacity: .8; */
+
+}
+/*** TABBED SEARCH BOX ***/
+.searchbox-holder {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+@media only screen and (max-width: 990px) {
+  .searchbox-holder { /* top: 25%  */}
+}
+
+@media only screen and (max-width: 767px) {
+  #slide { /* display: none; */ background-image: none;}
+  .searchbox-holder {
+    left: auto;
+    margin: 0;
+    position: relative;
+    top: auto;
+    width: 100%;
+  }
+
+  .beetbox {
+    padding: 0;
+  }
+}
+
+/** Styling Individual Searchboxes **/
+#journals form:first-of-type {
+  margin-bottom: 2%;
+}
+#journals hr {
+  border: 1px dashed #fff;
+}
+#journals .paydirt {
+  padding: 1.5em .5em 1.5em 1em;
+}
+#spotcontainer div {
+  margin-top: 0;
+  padding-top: 0;
+}
+#spotcontainer h4 {
+  color: #666;
+  font-weight: 700;
+}
+#spotcontainer h4 a {
+  color: #666;
+  font-weight: 400;
+}
+.item-description p:not(:first-of-type) {
+  margin-top: .5em;
+}
+/* spotlight/featured resources */
+.picture {
+  position: relative;
+  text-align: center; /* hacky :thumbs_down: */
+  width: auto;
+}
+.picture img {
+  height: 250px;
+}
+.picture p {
+  text-align: left;
+}
+.picture .image-overlay-link,
+.picture .image-overlay-zoom {
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* height: 100%; */
+
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  text-decoration: none;
+  /* width: 100%; */
+
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+.picture:hover .image-overlay-link {
+  opacity: .8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.image-overlay-link a {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.image-overlay-link {
+  background-image: url(../images/overlay-icon-01.png);
+}
+.image-overlay-zoom {
+  background-image: url(../images/overlay-icon-02.png);
+}
+/**** Gov Docs ****/
+#govkey {
+  margin-top: 2%;
+}
+#govdocs dl {
+  overflow: hidden;
+  width: 100%;
+}
+#govdocs dt {
+  clear: left;
+  float: left;
+  width: 20%;
+}
+#govdocs dd {
+  display: block;
+  float: left;
+  vertical-align: middle;
+  width: 80%;
+}
+#govdocs #states dt,
+#govdocs #countries dt {
+  margin-bottom: .25em;
+  width: 100%;
+}
+#govdocs #states dd,
+#govdocs #countries dd {
+  margin-bottom: .75em;
+}
+#govdocs dt.free,
+#govdocs dt.subscription,
+#govdocs dt.blank {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #ccc;
+  content: "";
+  display: inline;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 5px;
+  vertical-align: top;
+  width: 40px;
+}
+#govdocs dt.free {
+  background-image: url("../images/govdocs-free.jpg");
+}
+#govdocs dt.subscription {
+  background-image: url("../images/M.gif");
+}
+#govdocs dt.blank {
+  border: 0;
+}
+#govdocs #us dt,
+#govdocs #us dd {
+  margin-bottom: 1em;
+}
+/**** Hours page ****/
+#hourswidget .highlight {
+  background-color: #1a4663;
+  border: 0;
+  color: #fff;
+}
+/**** Maps page ****/
+#floorplans .picture {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+#floorplans .picture:hover .image-overlay-zoom {
+  display: block;
+  opacity: 0.7;
+}
+#floorplans .image-overlay-zoom {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 40;
+}
+#floorplans .image-overlay-zoom a {
+  display: block;
+  height: inherit;
+  width: inherit;
+}
+/**** Periodicals Reading Lounge ****/
+.monthper blockquote {
+  font-size: 1.20em;
+  font-style: italic;
+  margin-left: 1em;
+}
+.monthper blockquote cite {
+  display: block;
+  font-weight: 700;
+  text-align: right;
+}
+.monthper blockquote cite:before {
+  content: "\2014 ";
+}
+.previousper .thumbnail img {
+  cursor: pointer;
+  min-height: 240px;
+  width: auto;
+}
+.previousper .thumbnail:hover {
+  box-shadow: 0 0 3px 1px #aaa;
+}
+/**** Staff Directory ****/
+#directory {
+  margin-bottom: 2em;
+}
+#directory #tab {
+  font-size: 1.25em;
+}
+#directory th {
+  background-color: #1a4663;
+  color: #ffffff;
+  text-align: center;
+}
+#directory .heading {
+  background-color: #98c6e4;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+}
+#staff ul {
+  list-style-type: none;
+  margin: 0;
+}
+#staff h3 {
+  border-bottom: 1px solid #919693;
+  padding-bottom: 0;
+}
+#staff h3,
+#staff p {
+  width: 75%;
+}
+#staff img {
+  max-width: 250px;
+}
+@media only screen and (max-width: 767px) {
+  [id^=search_icon] {
+    display: none;
+  }
+  * {
+    overflow-x: hidden;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  img#logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #top {
+    background-color: #eee;
+    border-bottom: 1px solid #bbb;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0;
+    -webkit-box-shadow: inset 0 1px 1px 1px #ccc;
+    -moz-box-shadow: inset 0 1px 1px 1px #ccc;
+    -o-box-shadow: inset 0 1px 1px 1px #ccc;
+    box-shadow: inset 0 1px 1px 1px #ccc;
+  }
+  a.btn {
+    min-width: 40%;
+    vertical-align: middle;
+  }
+  a.btn:nth-of-type(even) {
+    float: right;
+  }
+  #content {
+    margin-bottom: 0;
+    padding: 0 1%;
+    padding-bottom: 0;
+  }
+}
+
+.help-text {
+  display: block;
+  font-size: 1.25em;
+  font-style: italic;
+  line-height: 1.5em;
+  margin-left: 5%;
+}
+
+/*
+@media only screen and (min-width: 1280px) {
+  #nav .spacer {
+    width: 19%;
+  }
+}
+
+
+@media only screen and (max-width: 1225px) {
+  #nav .spacer { width: 0; }
+}
+
+@media only screen and (max-width: 1024px) {
+  #navbar { font-size: 1em; }
+  #nav .spacer { width: 14%; }
+}
+*/.headersymbol {
+  font-size: 30px;
+  vertical-align: middle;
+}
+[id^=search_icon] {
+  border: 4px dashed #cc092f;
+  border-radius: 7em;
+  color: #cc092f;
+  font-size: 7em;
+  padding: .20em;
+}
+#search_icon_article {
+  padding-left: .33em;
+  padding-right: .33em;
+}
+.individual-search form {
+  margin-top: 0;
+}
+.individual-search .radio.inline {
+  padding-left: 5px;
+  margin-right: 25px;
+}
+/* Students - Modal */
+#reserves-modal {
+  padding-bottom: 0;
+}
+#reserves-modal .modal-body form,
+#reserves-modal .modal-body span {
+  padding-top: 1%;
+}
+#reserves-modal .modal-body span {
+  margin-bottom: 0;
+}
+/* Students - Make an Appointment */
+#appointment ul li {
+  margin-left: 2.5em;
+}
+#appointment h5 {
+  display: inline-block;
+}

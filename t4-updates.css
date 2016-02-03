@@ -1,0 +1,122 @@
+p {
+  margin-top: 10px;
+}
+
+header {
+    overflow-y: hidden;
+}
+
+#top a > i {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+#top { vertical-align: top; }
+#todaysHours { display: block; }
+
+/* hide top-level link to home */
+.currentbranch0, nav > a { display: none; }
+
+nav {
+  background-color: #cc092f;
+  overflow: hidden;
+  padding: 0;
+  z-index: 998;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* top-sections */
+nav > ul > li {
+  display: inline-block;
+  font-size: 1.25em;
+  padding: .5em;
+}
+
+nav > ul > li > a {
+  color: white;
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul > li > a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+nav > ul > li:hover,
+.currentbranch1 {
+  background-color: #1a4463;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+}
+
+/* secondary ul */
+nav > ul > li > ul {
+  background-color: #fff;
+  box-shadow: 0 1px 2px 1px #aaa;
+  display: none;
+  font-size: .75em;
+  margin-top: 8px;
+  margin-left: -5px;
+  min-width: 10em;
+  padding: .5em;
+  position: absolute;
+  z-index: 999;
+}
+
+/* overwrites bootstrap's 20px margin-bottom
+   for .breadcrumb */
+.breadcrumb {
+  margin: 0;
+}
+
+.breadcrumb li + li:before {
+  content: ">";
+  font-weight: 900;
+  padding: 0 .5em;
+}
+
+.staff ul {
+  list-style-type: none;
+  margin: 0;
+}
+.staff h3 {
+  border-bottom: 1px solid #919693;
+  padding-bottom: 0;
+}
+.staff h3,
+.staff p {
+  width: 75%;
+}
+.staff img {
+  max-width: 250px;
+}
+
+.footer-headline h4,
+.footer-headline i {
+  color: #fff;
+}
+
+.footer-headline h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* featured resource archive image div */
+.media .feature-resource-image,
+.media .spotlight-image {
+  margin: auto;
+  width: 200px;
+}
+
+.media .feature-resource-image img,
+.media .spotlight-image img {
+  max-height: 175px;
+}
